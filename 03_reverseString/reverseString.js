@@ -1,5 +1,6 @@
 const reverseString = function(string) {
 
+    /* simplre solution
     //split string into array with split()
     let splitString = string.split("");
 
@@ -11,6 +12,22 @@ const reverseString = function(string) {
 
     //return reversed string
     return joinArray;
+    */
+
+    /*solution with for loop */
+
+    //create empty string to host new one
+    let newString = "";
+
+    //FOR loop
+    for (let i = string.length - 1; i>= 0; i--) {
+        newString += string[i];
+    }
+    return newString;
+
+
+
+    
 
 };
 
